@@ -1,6 +1,7 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-image: url(./elements/img1.jpg);
     background-repeat: repeat;
@@ -22,7 +23,7 @@ body {
 }
 
 .nav {
-    background-color: rgb(16, 16, 16);
+    background-color: transparent;
     position: sticky;
     display: flex;
     justify-content: space-between;
@@ -48,10 +49,21 @@ body {
     margin-right: 2rem;
     text-decoration: none;
     color: white;
+    font-size: 1.25rem;
 }
-.options a :hover{
-    text-decoration: underline white;
+
+.options a:hover {
+
+    transition-duration: 1s;
+    transition-delay: 2ms;
+    background-color: rgb(58, 56, 56);
 }
+
+.navbar {
+    position: relative;
+    top: 45px;
+}
+
 .options ul li {
     list-style-type: none;
     text-decoration: none;
@@ -114,7 +126,7 @@ footer .right-footer {
     position: relative;
 }
 
-.right-footer button{
+.right-footer button {
 
     margin-top: 10px;
     align-self: center;
@@ -127,10 +139,11 @@ footer .right-footer {
     background-color: rgba(67, 63, 63, 0.259);
     border-radius: 0.5rem;
     text-align: center;
-    
+
     font-size: 1rem;
 }
-.right-footer h4{
+
+.right-footer h4 {
     margin: 0.5rem;
 }
 
@@ -145,14 +158,15 @@ footer .right-footer {
 
 }
 
-.sec3{
+.sec3 {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
     width: 85%;
 }
-.sec3 .skills{
+
+.sec3 .skills {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -160,27 +174,35 @@ footer .right-footer {
 
 }
 
-.skills{
+.skills {
     width: 95%;
 }
-.skill-logo img{
 
+.skill-logo img {
     height: 4rem;
-    margin:8px;
-    
+    margin: 8px;
 }
-.skill-logo audio{
+
+.skill-logo img:hover {
+    transition-duration: 1s;
+    transition-delay: 2ms;
+    box-shadow: -2px -2px 6px 2px inset black;
+}
+
+/* .skill-logo audio {
     height: 100px;
     background-color: white;
-}
-.contact-links{
+} */
+
+.contact-links {
     display: flex;
     flex-direction: row;
-    
+
     align-items: center;
 }
-.contact-links img{
+
+.contact-links img {
     height: 70px;
-    padding:1rem;
-    margin:-5px;
+    padding: 1rem;
+    margin: -5px;
 }
