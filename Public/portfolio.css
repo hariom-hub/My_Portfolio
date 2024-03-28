@@ -27,15 +27,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 2;
 }
-
-main{
-    z-index: 1;
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
 }
 
+main{
+    z-index: 0;
+}
 .nav .name {
     margin: 1.5rem 2rem;
 }
@@ -63,8 +67,7 @@ main{
 }
 
 .navbar {
-    position: relative;
-    top: 45px;
+    position: fixed;
 }
 
 .options ul li {

@@ -25,7 +25,7 @@
 <body>
 
     <header>
-        <nav class="navbar">
+        <!-- <nav class="navbar"> -->
             <div class="nav">
                 <div class="name">
                     <h1><a href="#" style="font-family: cursive;color: white;text-decoration: none;">Hariom Singh Thakur</a></h1>
@@ -34,13 +34,13 @@
                     <a href="#">Profile</a>
                     <a href="#">About</a>
                     <a href="#">Projects</a>
-                    <a href="#">Skills</a>
+                    <a href="#" id="skills">Skills</a>
                     <a href="#">Contact Me</a>
-                    <a download="Hariom Singh Thakur.pdf" href="#">Resume</a>
+
                     <!-- <a href="#">Experience</a> -->
                 </div>
             </div>
-        </nav>
+        <!-- </nav> -->
     </header>
     <main>
         <!-- <section class="sec1">
@@ -69,13 +69,13 @@
             </div>
         </section>
         <section class="sec3">
-            <div class="skills">
+            <div class="skills" id="skills">
                 <h1 style="font-size: 40px;font-weight:2000;color: rgb(255, 255, 255);">Skills</h1>
                 <p>I have great interest in learning and exploring new technologies as they fill me with great curiosity
                     and zeal.</p>
 
             </div>
-            <div class="skill-logo">
+            <div class="skill-logo" id="skills">
                 <!-- <i class="fa-brands fa-html5"></i> -->
                 <img src="./elements/HTML5.svg" alt="">
                 <img src="./elements/CSS3.svg" alt="">
@@ -141,6 +141,7 @@
             <button type="button" class="btn btn-primary">Submit</button>
         </div>
     </footer>
+    <script src="logic.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         // var typed = new Typed('#element', {
